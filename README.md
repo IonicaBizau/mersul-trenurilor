@@ -74,10 +74,10 @@ yarn add mersul-trenurilor
 
 
 ```js
-const mersulTrenurilor = require("mersul-trenurilor");
+var mersulTrenurilor = require("mersul-trenurilor");
 
-mersulTrenurilor.train("10242").then(result => {
-    console.log(result)
+mersulTrenurilor.train("10242").then(function (result) {
+    console.log(result);
     // =>
     // {
     //   train_category: '',

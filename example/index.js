@@ -1,9 +1,9 @@
 "use strict";
 
-const mersulTrenurilor = require("../lib");
+var mersulTrenurilor = require("../lib");
 
-mersulTrenurilor.train("10242").then(result => {
-    console.log(result)
+mersulTrenurilor.train("10242").then(function (result) {
+    console.log(result);
     // =>
     // {
     //   train_category: '',
