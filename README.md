@@ -17,7 +17,7 @@
 
 
 
-# mersul-trenurilor
+# `$ mersul-trenurilor`
 
  [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/mersul-trenurilor.svg)](https://www.npmjs.com/package/mersul-trenurilor) [![Downloads](https://img.shields.io/npm/dt/mersul-trenurilor.svg)](https://www.npmjs.com/package/mersul-trenurilor) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
@@ -41,6 +41,8 @@
 
 
 
+[![mersul-trenurilor](https://i.imgur.com/YPM4DgR.png)](#)
+
 
 
 
@@ -49,12 +51,39 @@
 
 ## :cloud: Installation
 
+You can install the package globally and use it as command line tool:
+
+
 ```sh
 # Using npm
-npm install --save mersul-trenurilor
+npm install --global mersul-trenurilor
 
 # Using yarn
-yarn add mersul-trenurilor
+yarn global add mersul-trenurilor
+```
+
+
+Then, run `mersul-trenurilor --help` and see what the CLI tool can do.
+
+
+```
+$ mersul-trenurilor --help
+Usage: mersul-trenurilor <train-id> [options]
+
+Information about the Romanian trains.
+
+Command arguments:
+  <train-id>  The train ID.
+
+Options:
+  -h, --help     Displays this help.
+  -v, --version  Displays version information.
+
+Examples:
+  $ mersul-trenurilor 367
+  $ mersul-trenurilor 367 --json
+
+Documentation can be found at https://github.com/IonicaBizau/mersul-trenurilor#readme.
 ```
 
 
@@ -70,6 +99,10 @@ yarn add mersul-trenurilor
 
 
 ## :clipboard: Example
+
+
+
+Here is an example how to use this package as library. To install it locally, as library, you can use `npm install mersul-trenurilor` (or `yarn add mersul-trenurilor`):
 
 
 
@@ -142,28 +175,7 @@ There are few ways to get help:
 
 ## :memo: Documentation
 
-
-### `train(id)`
-Information about a given train ID.
-
-#### Params
-
-- **Number** `id`: The train ID (e.g. `367`, not IR367)
-
-#### Return
-- **Promise** A promise resolving with the scraped train information:
-     - `train_category` (String): The train category.
-     - `train_number` (String): The train number.
-     - `route` (Array): An array of objects containing:
-       - `arrive_time` (String): The arrive time.
-       - `arrive_time_comment` (String): Arrive time comment (such as delays)
-       - `location` (String): The stop information.
-       - `distance` (String): The number of the km in the route.
-       - `stop_comment (String): The stop comment, such as how long the stop time is.
-       - `leave_time` (String): The leave time.
-       - `leave_time_comment` (String): The leave time comment.
-
-
+For full API reference, see the [DOCUMENTATION.md][docs] file.
 
 
 

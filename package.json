@@ -51,5 +51,8 @@
     "puppeteer": "^20.7.3",
     "scrape-it": "^6.0.1",
     "tilda": "^4.4.16"
+  },
+  "blah": {
+    "ex_img": "https://i.imgur.com/YPM4DgR.png"
   }
 }
