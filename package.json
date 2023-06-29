@@ -41,5 +41,10 @@
   },
   "bugs": {
     "url": "https://github.com/IonicaBizau/mersul-trenurilor/issues"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "puppeteer": "^20.7.3",
+    "scrape-it": "^6.0.1"
   }
 }
